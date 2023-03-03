@@ -65,7 +65,7 @@ The project is built with ES6 Js [Front-End].
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 **Open the live-demo of the project**
-[Project Link][https://github.com/mdg0410/To-Do-List.git]
+[Project Link][https://mdg0410.github.io/To-Do-List/]
 
 <!-- GETTING STARTED -->
 
