@@ -1,5 +1,5 @@
-import Task from './task.js';
 import TaskForm from './Task-form.js';
+import Task from './task.js';
 
 export class List {
   tasks = []
@@ -23,7 +23,7 @@ export class List {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.addTask(this.workForm.from.description.value);
+    this.addTask(this.workForm.form.description.value);
     this.workForm.form.reset();
   }
 
@@ -34,11 +34,15 @@ export class List {
   }
 
   render() {
+    this.container.parentNode.querySelectorAll('[data-task]').forEach((task) => task.remove());
+
     this.tasks.sort((a, b) => b.index - a.index).forEach((task) => {
       const { taskNode } = task.createNode();
       this.container.after(taskNode);
-      this.saveToLocal();
     });
+
+    this.tasks.sort((a, b) => a.index - b.index);
+
     return this;
   }
 
