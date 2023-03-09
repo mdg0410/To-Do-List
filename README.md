@@ -103,7 +103,6 @@ Now you can go and play with it as you wish :smile:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add `add/remove` method]**
 - [ ] **[Add interactive funtion]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
