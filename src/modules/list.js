@@ -9,8 +9,8 @@ export class List {
   constructor() {
     this.container = document.getElementById('form-item');
 
-    if (localStorage.getItem('localTasks')) {
-      this.tasks = JSON.parse(localStorage.getItem('localTasks')).map((task) => new Task(task.description, task.completed, task.index));
+    if (localStorage.getItem('Task')) {
+      this.tasks = JSON.parse(localStorage.getItem('Task')).map((task) => new Task(task.description, task.completed, task.index));
     }
 
     this.setCurrentForm();
@@ -23,8 +23,13 @@ export class List {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.addTask(this.workForm.form.description.value);
-    this.workForm.form.reset();
+    if (this.workForm.isUpdating) {
+      this.updateTask(this.workForm.form.description.value, this.workForm.form.index.value);
+    } else {
+      this.addTask(this.workForm.form.description.value);
+      this.workForm.form.description.focus();
+      this.workForm.form.reset();
+    }
   }
 
   addTask(description) {
@@ -33,12 +38,27 @@ export class List {
     this.render().saveToLocal();
   }
 
+  updateTask(description, index) {
+    this.tasks[index - 1].description = description;
+    this.saveToLocal();
+  }
+
+  removeTask(index) {
+    this.tasks = this.tasks.filter((task) => task.index !== index);
+    for (let i = 0; i < this.tasks.length; i += 1) {
+      this.tasks[i].index = i + 1;
+    }
+    this.render().saveToLocal();
+  }
+
   render() {
     this.container.parentNode.querySelectorAll('[data-task]').forEach((task) => task.remove());
 
     this.tasks.sort((a, b) => b.index - a.index).forEach((task) => {
-      const { taskNode } = task.createNode();
+      const { taskNode, descriptionNode, taskIndex } = task.createNode();
       this.container.after(taskNode);
+      descriptionNode.onfocus = (e) => this.editing(e, taskNode, taskIndex);
+      descriptionNode.onblur = (e) => this.edited(e, taskNode);
     });
 
     this.tasks.sort((a, b) => a.index - b.index);
@@ -47,7 +67,31 @@ export class List {
   }
 
   saveToLocal() {
-    localStorage.setItem('localTasks', JSON.stringify(this.tasks));
+    localStorage.setItem('Task', JSON.stringify(this.tasks));
+  }
+
+  editing(e, taskNode, taskIndex) {
+    taskNode.classList.add('editing-task');
+    const trash = taskNode.querySelector('i.fa-trash');
+    trash.classList.toggle('hidden');
+
+    this.setCurrentForm(`task-${taskIndex}`, true);
+
+    trash.onclick = (ev) => {
+      ev.cancelBubble = true;
+      this.removeTask(taskIndex);
+    };
+    taskNode.querySelector('i.fa-bars').classList.toggle('hidden');
+  }
+
+  edited(e, taskNode) {
+    this.workForm.form.requestSubmit();
+    this.setCurrentForm();
+    setTimeout(() => {
+      taskNode.classList.remove('editing-task');
+      taskNode.querySelector('i.fa-trash').classList.toggle('hidden');
+      taskNode.querySelector('i.fa-bars').classList.toggle('hidden');
+    }, 100);
   }
 }
 
