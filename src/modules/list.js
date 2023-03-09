@@ -72,14 +72,12 @@ export class List {
 
   editing(e, taskNode, taskIndex) {
     taskNode.classList.add('editing-task');
-    const trash = taskNode.querySelector('i.fa-trash');
+    const trash = taskNode.querySelector('button.trash');
     trash.classList.toggle('hidden');
-
     this.setCurrentForm(`task-${taskIndex}`, true);
-
-    trash.onclick = (ev) => {
-      ev.cancelBubble = true;
+    trash.onmousedown = () => {
       this.removeTask(taskIndex);
+      this.setCurrentForm();
     };
     taskNode.querySelector('i.fa-bars').classList.toggle('hidden');
   }
@@ -89,9 +87,9 @@ export class List {
     this.setCurrentForm();
     setTimeout(() => {
       taskNode.classList.remove('editing-task');
-      taskNode.querySelector('i.fa-trash').classList.toggle('hidden');
       taskNode.querySelector('i.fa-bars').classList.toggle('hidden');
-    }, 100);
+      taskNode.querySelector('button.trash').classList.add('hidden');
+    }, 200);
   }
 }
 

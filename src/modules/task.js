@@ -17,7 +17,7 @@ export default class Task {
         <input type="hidden" value="${this.index}" name="index" />
       </form>
     </div>
-    <i class="fa-solid fa-trash hidden" data-task-index="${this.index}"></i><i class="fa-solid fa-bars" data-task-index="${this.index}"></i>
+    <button type='button' class="trash hidden" data-task-index="${this.index}"><i class="fa-solid fa-trash"></i></button><i class="fa-solid fa-bars" data-task-index="${this.index}"></i>
     `;
 
     const descriptionNode = taskNode.querySelector('input.task-item');

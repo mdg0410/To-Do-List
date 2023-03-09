@@ -65,6 +65,11 @@ main ul li i.fa-bars:hover {
 
 /* End cursor mode */
 
+button.trash{
+  background-color: transparent;
+  border: transparent;
+}
+
 main ul li i:hover {
   color: #202020;
 }
@@ -122,3 +127,4 @@ input.task-item.task-completed {
 .hidden {
   display: none !important;
 }
+
