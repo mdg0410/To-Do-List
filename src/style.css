@@ -65,7 +65,7 @@ main ul li i.fa-bars:hover {
 
 /* End cursor mode */
 
-button.trash{
+button.trash {
   background-color: transparent;
   border: transparent;
 }
@@ -127,4 +127,3 @@ input.task-item.task-completed {
 .hidden {
   display: none !important;
 }
-
