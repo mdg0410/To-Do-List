@@ -51,6 +51,11 @@ export class List {
     this.render().saveToLocal();
   }
 
+  toggleTaskStatus(task) {
+    task.toggleStatus();
+    this.render().saveToLocal();
+  }
+
   render() {
     this.container.parentNode.querySelectorAll('[data-task]').forEach((task) => task.remove());
 
@@ -59,6 +64,8 @@ export class List {
       this.container.after(taskNode);
       descriptionNode.onfocus = (e) => this.editing(e, taskNode, taskIndex);
       descriptionNode.onblur = (e) => this.edited(e, taskNode);
+      const completeBtn = taskNode.querySelector('input[type="checkbox"]');
+      completeBtn.onclick = () => this.toggleTaskStatus(task);
     });
 
     this.tasks.sort((a, b) => a.index - b.index);
