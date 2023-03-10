@@ -9,6 +9,9 @@ export class List {
   constructor() {
     this.container = document.getElementById('form-item');
 
+    const clearCompletedBtn = document.querySelector('.list-footer');
+    clearCompletedBtn.onclick = this.clearCompleted.bind(this);
+
     if (localStorage.getItem('Task')) {
       this.tasks = JSON.parse(localStorage.getItem('Task')).map((task) => new Task(task.description, task.completed, task.index));
     }
@@ -53,6 +56,11 @@ export class List {
 
   toggleTaskStatus(task) {
     task.toggleStatus();
+    this.render().saveToLocal();
+  }
+
+  clearCompleted() {
+    this.tasks = this.tasks.filter((task) => !task.completed);
     this.render().saveToLocal();
   }
 
