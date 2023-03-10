@@ -4,12 +4,14 @@
   <h3><b>To Do List</b></h3>
 </div>
 
+<!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    [Tech Stack](#tech-stack)
-    [Key Features](#key-features)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -25,7 +27,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Awesome Books<a name="about-project"></a>
@@ -38,7 +39,9 @@ The project is built with ES6 Js [Front-End].
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+- [**HTML**]
+- [**CSS**]
+- [**JavaScript**]
 
 <details>
   <summary>Client</summary>
@@ -48,6 +51,19 @@ The project is built with ES6 Js [Front-End].
     <li><a href="https://www.w3schools.com/javascript/default.asp">JavaScript</a></li>
     <li><a href="https://www.geeksforgeeks.org/dom-document-object-model/">DOM</a></li>
     <li><a href="https://webpack.js.org/guides/getting-started/#basic-setup">Webpack</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="#">N/A</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="#">N/A</a></li>
   </ul>
 </details>
 
@@ -89,6 +105,72 @@ To get a local copy of this exercice, Please follow these simple example steps.
 
 Now you can go and play with it as you wish :smile:
 
+### Prerequisites
+
+- IDE (code editor) like: VScode, Sublime, etc
+- [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+
+
+### Setup
+
+1. Download the **Zip** file or clone the repo with:
+```bash
+git clone https://github.com/mdg0410/To-Do-List.git
+```
+2. To access cloned directory run:
+```bash
+cd To-Do-List
+```
+
+
+
+### Install
+
+> To install linters and other project's dependencies run:
+
+```bash
+npm install
+```
+
+
+
+### Usage
+
+To run the project, execute the following command: 
+
+- Excute below command in the terminal to serve live 
+```bash
+npm run start
+```
+
+
+## Run Test for Linters
+
+For tracking linter errors locally you need to follow these steps:
+
+1. For tracking linter errors in HTML files run:
+```bash 
+npx hint .
+```
+
+2. For tracking linter errors in CSS or SASS files run:
+
+```bash
+npx stylelint "\*_/_.{css,scss}"
+```
+
+3. For tracking linter errors in JavaScript files run:
+
+```bash
+npx eslint .
+```
+
+### Deployment
+
+You can deploy this project using:
+
+- N/A
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **mdg0410**
@@ -103,19 +185,21 @@ Now you can go and play with it as you wish :smile:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add `add/remove` method]**
 - [ ] **[Add interactive funtion]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Show your support
-Give a ⭐️ if you like this project!
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/mdg0410/To-Do-List/issues)
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, kindly follow me on GitHub 😊
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
 
