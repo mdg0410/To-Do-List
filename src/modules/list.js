@@ -9,6 +9,9 @@ export class List {
   constructor() {
     this.container = document.getElementById('form-item');
 
+    const clearCompletedBtn = document.querySelector('.list-footer');
+    clearCompletedBtn.onclick = this.clearCompleted.bind(this);
+
     if (localStorage.getItem('Task')) {
       this.tasks = JSON.parse(localStorage.getItem('Task')).map((task) => new Task(task.description, task.completed, task.index));
     }
@@ -51,6 +54,16 @@ export class List {
     this.render().saveToLocal();
   }
 
+  toggleTaskStatus(task) {
+    task.toggleStatus();
+    this.render().saveToLocal();
+  }
+
+  clearCompleted() {
+    this.tasks = this.tasks.filter((task) => !task.completed);
+    this.render().saveToLocal();
+  }
+
   render() {
     this.container.parentNode.querySelectorAll('[data-task]').forEach((task) => task.remove());
 
@@ -59,6 +72,8 @@ export class List {
       this.container.after(taskNode);
       descriptionNode.onfocus = (e) => this.editing(e, taskNode, taskIndex);
       descriptionNode.onblur = (e) => this.edited(e, taskNode);
+      const completeBtn = taskNode.querySelector('input[type="checkbox"]');
+      completeBtn.onclick = () => this.toggleTaskStatus(task);
     });
 
     this.tasks.sort((a, b) => a.index - b.index);
