@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1683912943977" clover="3.2.0">
-  <project timestamp="1683912943977" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="13" coveredelements="13" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
-    <file name="addTask-Mock.js" path="C:\Users\Steven\Documents\Git_Repo\To-Do-List\src\__Mocks__\addTask-Mock.js">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="11" count="2" type="stmt"/>
-      <line num="13" count="2" type="stmt"/>
-    </file>
-    <file name="localstorageMock.js" path="C:\Users\Steven\Documents\Git_Repo\To-Do-List\src\__Mocks__\localstorageMock.js">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="7" count="2" type="stmt"/>
-    </file>
+<coverage generated="1683934528403" clover="3.2.0">
+  <project timestamp="1683934528403" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="21" coveredelements="21" complexity="0" loc="17" ncloc="17" packages="2" files="4" classes="4"/>
+    <package name="__Mocks__">
+      <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="addTask-Mock.js" path="C:\Users\Steven\Documents\Git_Repo\To-Do-List\src\__Mocks__\addTask-Mock.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+      <file name="localstorageMock.js" path="C:\Users\Steven\Documents\Git_Repo\To-Do-List\src\__Mocks__\localstorageMock.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+      </file>
+      <file name="removeTask.js" path="C:\Users\Steven\Documents\Git_Repo\To-Do-List\src\__Mocks__\removeTask.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="tasks.js" path="C:\Users\Steven\Documents\Git_Repo\To-Do-List\src\modules\tasks.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
