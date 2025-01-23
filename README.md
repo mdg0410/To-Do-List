@@ -2,6 +2,7 @@
 
 <div align="center">
   <h3><b>To Do List</b></h3>
+  ![gif](https://drive.google.com/file/d/1xxeLmpiTnIZEh-wFQMb7bTAK1lC3H3fQ/view?usp=sharing)
 </div>
 
 <!-- TABLE OF CONTENTS -->
