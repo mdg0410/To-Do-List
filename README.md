@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>To Do List</b></h3>
-  ![gif](https://drive.google.com/file/d/1xxeLmpiTnIZEh-wFQMb7bTAK1lC3H3fQ/view?usp=sharing)
+  <h3><b>Welcome To My Project "To Do List"</b></h3>
+<img src="./ToDoList.gif"/>
 </div>
 
 <!-- TABLE OF CONTENTS -->
