@@ -2,209 +2,137 @@
 
 <div align="center">
   <h3><b>Welcome To My Project "To Do List"</b></h3>
-<img src="./ToDoList.gif"/>
+  <img src="./ToDoList.gif" alt="To Do List Demo">
+  <p>Una aplicación To Do List minimalista y versátil construida con JavaScript para organizar tus tareas de forma eficiente.</p> 
 </div>
 
-<!-- TABLE OF CONTENTS -->
+# 📗 Tabla de Contenidos
 
-# 📗 Table of Contents
+- [📖 Acerca del Proyecto](#acerca-del-proyecto)
+  - [🛠 Construido con](#construido-con)
+    - [Tecnologías](#tecnologias)
+    - [Características Principales](#caracteristicas-principales)
+  - [🚀 Demostración en Vivo](#demostracion-en-vivo)
+- [💻 Cómo Empezar](#como-empezar)
+  - [Prerrequisitos](#prerrequisitos)
+  - [Configuración](#configuracion)
+  - [Instalación](#instalacion)
+  - [Uso](#uso)
+  - [Ejecutar Pruebas](#ejecutar-pruebas)
+- [👥 Autores](#autores)
+- [🔭 Características Futuras](#caracteristicas-futuras)
+- [🤝 Contribuciones](#contribuciones)
+- [⭐️ Mostrar tu Apoyo](#mostrar-tu-apoyo)
+- [🙏 Agradecimientos](#agradecimientos)
+- [📝 Licencia](#licencia)
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+# 📖 Acerca del Proyecto <a name="acerca-del-proyecto"></a>
 
-<!-- PROJECT DESCRIPTION -->
+"To Do List" es una aplicación web que te ayuda a organizar tus tareas diarias de manera simple y eficiente. Su interfaz intuitiva te permite agregar, modificar, eliminar y marcar tareas como completadas con facilidad. Desarrollada con JavaScript, esta aplicación ofrece una experiencia de usuario fluida.
 
-# 📖 Awesome Books<a name="about-project"></a>
+**Características Destacadas:**
 
-**To Do List** In this project, I build a minimalist to-do agenda.
-Functions: Add tasks | Modify tasks | Remove tasks | Delete completed tasks.
-The project is built with ES6 Js [Front-End].
+*   **Gestión de tareas:** Agrega, edita, elimina y marca tareas como completadas.
+*   **Interfaz minimalista:** Diseño limpio y fácil de usar.
+*   **Almacenamiento local:** Tus tareas se guardan en tu navegador.
+*   **Construida con tecnologías web:** HTML, CSS y JavaScript.
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Construido con <a name="construido-con"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+### Tecnologías <a name="tecnologias"></a>
 
-- [**HTML**]
-- [**CSS**]
-- [**JavaScript**]
+-   [HTML](https://www.w3schools.com/html/default.asp)
+-   [CSS](https://www.w3schools.com/css/default.asp)
+-   [JavaScript](https://www.javascript.com/)
+-   [React](https://reactjs.org/)
+-   [react-dom](https://reactjs.org/docs/react-dom.html)
+-   [webpack](https://webpack.js.org/)
+-   [babel](https://babeljs.io/)
+-   [eslint](https://eslint.org/)
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.w3schools.com/html/default.asp">Html</a></li>
-    <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
-    <li><a href="https://www.w3schools.com/javascript/default.asp">JavaScript</a></li>
-    <li><a href="https://www.geeksforgeeks.org/dom-document-object-model/">DOM</a></li>
-    <li><a href="https://webpack.js.org/guides/getting-started/#basic-setup">Webpack</a></li>
-  </ul>
-</details>
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="#">N/A</a></li>
-  </ul>
-</details>
+### Características Principales <a name="caracteristicas-principales"></a>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="#">N/A</a></li>
-  </ul>
-</details>
+-   **Agregar tarea:** Permite añadir nuevas tareas a la lista.
+-   **Modificar tarea:** Edita la descripción de una tarea existente.
+-   **Eliminar tarea:** Elimina una tarea de la lista.
+-   **Marcar como completada:** Marca una tarea como completada.
+-   **Limpiar tareas completadas:** Elimina todas las tareas marcadas como completadas.
 
-<!-- Features -->
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
 
-### Key Features <a name="key-features"></a>
+## 🚀 Demostración en Vivo <a name="demostracion-en-vivo"></a>
 
-- **[Add Task]**
-- **[Modifique Task]**
-- **[Remove Task]**
-- **[Clear All Task]**
+- [Ver la demostración en vivo](https://mdg0410.github.io/To-Do-List/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 💻 Cómo Empezar <a name="como-empezar"></a>
 
-**Open the live-demo of the project**
-[Project Link][https://mdg0410.github.io/To-Do-List/]
+### Prerrequisitos
 
-<!-- GETTING STARTED -->
+-   Un navegador web moderno (Chrome, Firefox, Edge)
+-   Git (opcional, para clonar el repositorio)
+-   Node.js y npm (para instalar dependencias)
 
-## 💻 Getting Started <a name="getting-started"></a>
+### Configuración
 
-## Getting Started
-To get a local copy of this exercice, Please follow these simple example steps.
+1.  Clonar el repositorio (opcional): `git clone https://github.com/mdg0410/To-Do-List.git`
 
-1. Clone this repository or download the Zip folder:
+### Instalación
 
-**``https://github.com/mdg0410/To-Do-List.git``**
+1.  Abre una terminal en la carpeta del proyecto.
+2.  Instala las dependencias: `npm install`
 
-2. Navigate to the location of the folder in your machine:
+### Uso
 
-**`` C:\Users\PATH\src\To-Do-List>``**
+1.  Inicia la aplicación: `npm start`
+2.  Abre la aplicación en tu navegador.
+3.  Agrega nuevas tareas.
+4.  Edita, elimina o marca tareas como completadas.
 
-3. Press Enter to navigate to your local clone.
-4. Open terminal and run this command npm install
-5. after finishing step 5, run this command npm start to run the project
-6. for testing components, you can run: npm run test.
+### Ejecutar Pruebas
 
-Now you can go and play with it as you wish :smile:
+Actualmente no hay pruebas automatizadas para este proyecto.
 
-### Prerequisites
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
 
-- IDE (code editor) like: VScode, Sublime, etc
-- [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+## 👥 Autores <a name="autores"></a>
 
+-   👤 **mdg0410**
 
-### Setup
+-   GitHub: [@mdg0410](https://github.com/mdg0410/)
+-   Twitter: [@StevenLevoyer](https://twitter.com/StevenLevoyer)
+-   LinkedIn: [Richard Steven Levoyer Chavez](https://www.linkedin.com/in/richard-steven-levoyer-chavez-9b902525b/)
 
-1. Download the **Zip** file or clone the repo with:
-```bash
-git clone https://github.com/mdg0410/To-Do-List.git
-```
-2. To access cloned directory run:
-```bash
-cd To-Do-List
-```
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
 
+## 🔭 Características Futuras <a name="caracteristicas-futuras"></a>
 
+-   [ ] Agregar animaciones/transiciones.
+-   [ ] Permitir a los usuarios crear cuentas para guardar sus tareas en la nube.
 
-### Install
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
 
-> To install linters and other project's dependencies run:
+## 🤝 Contribuciones <a name="contribuciones"></a>
 
-```bash
-npm install
-```
+Se aceptan contribuciones. Por favor, crea un fork del repositorio y envía un pull request con tus cambios.
 
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
 
+## ⭐️ Mostrar tu Apoyo <a name="mostrar-tu-apoyo"></a>
 
-### Usage
+Si te gusta este proyecto, ¡dale una estrella en GitHub!
 
-To run the project, execute the following command: 
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
 
-- Excute below command in the terminal to serve live 
-```bash
-npm run start
-```
+## 🙏 Agradecimientos <a name="agradecimientos"></a>
 
+- Agradezco a la comunidad de desarrolladores web por su apoyo e inspiración.
 
-## Run Test for Linters
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
 
-For tracking linter errors locally you need to follow these steps:
+## 📝 Licencia <a name="licencia"></a>
 
-1. For tracking linter errors in HTML files run:
-```bash 
-npx hint .
-```
+-   Este proyecto tiene la licencia [MIT](https://github.com/mdg0410/To-Do-List/blob/main/LICENSE).
 
-2. For tracking linter errors in CSS or SASS files run:
-
-```bash
-npx stylelint "\*_/_.{css,scss}"
-```
-
-3. For tracking linter errors in JavaScript files run:
-
-```bash
-npx eslint .
-```
-
-### Deployment
-
-You can deploy this project using:
-
-- N/A
-
-## 👥 Authors <a name="authors"></a>
-
-👤 **mdg0410**
-
-- GitHub: [@mdg0410](https://github.com/mdg0410/)
-- Twitter: [@StevenLevoyer](https://twitter.com/StevenLevoyer)
-- LinkedIn: [Richard Steven Levoyer Chavez](https://www.linkedin.com/in/richard-steven-levoyer-chavez-9b902525b/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Add transicion]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/mdg0410/To-Do-List/issues)
-
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project, kindly follow me on GitHub 😊
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Acknowledgments
-
-This project has been created in reference to the template created by
-
-## 📝 License
-This project is [MIT](https://github.com/mdg0410/To-Do-List/blob/main/LICENSE) licensed.
+<p align="right">(<a href="#readme-top">volver al inicio</a>)</p>
